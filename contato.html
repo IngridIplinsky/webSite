@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site empresa Ultra Telecom">
+        <meta name="keywords" content="Ultra Telecom, Telecom, telecomunicação, infra-estrutura">
+        <meta name="author" content="Ingrid Iplinsky de Oliveira"> 
+        <meta name="generation" content="Visual Studio Code">
+        <title>Ultra Telecom</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="styleSobre.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="topo">
+            <div class="menu">
+               <div class="infoEmpresa">
+                   <span>
+                       <img src="/imagens/logomarcaUltra - Copia.png" id="logo">
+                       <ul>
+                           <li><a href="https://wa.me/qr/5MAZVPKGO34HH1" target="_blank"> <i class="fa fa-phone">
+                                   </i>&nbsp;&nbsp; <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+55 34 3236-8411</a> </li>
+                           
+                           <li><a href="https://www.google.com.br/maps/place/R.+Vinte+e+Nove+de+Outubro,+335+-+Patrim%C3%B4nio,+Uberl%C3%A2ndia+-+MG,+38411-068/@-18.9342598,-48.2877838,17z/data=!3m1!4b1!4m5!3m4!1s0x94a444e4f4f9343b:0xbbf2e2ee6256a9cc!8m2!3d-18.9342649!4d-48.2855951" target="_blank"> 
+                                   <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Rua Vinte e Nove de Outubro, 335 – Uberlândia/MG – CEP 38.411-068 </a>  </li>
+                       </ul>
+                   </span>                   
+               </div>
+               <div class="itensMenu">
+                   <ul>
+                       <li><a class="itens" href="index.html">HOME</a></li>
+                       <li><a class="itens" href="sobre.html">SOBRE NÓS</a></li>
+                       <li><a class="itens" href="servicos.html">SERVIÇOS</a></li>
+                       <li><a class="itens" href="produtos.html">PRODUTOS</a></li>
+                       <li><a class="itens" href="contato.html">CONTATO</a></li>
+                   </ul>   
+               </div>
+               <div class="tituloTopo">
+                   <h1> Contato </h1>                                     
+                </div>
+            </div>             
+       </section>
+
+        <section class="sessaoContato">
+            <div>
+                <div class="sobreNosText">
+                    <p class="textInt">Entre em contato pelo formulário abaixo ou ligue <i class="fa fa-phone">&nbsp;&nbsp;34 3236-8411</i> </p>
+                    
+                    <a id="what" class="botoes" href="https://wa.me/qr/5MAZVPKGO34HH1" target="_blank"> 
+                        <i class="fa fa-whatsapp">&nbsp;&nbsp;34 99976-4786</i></a>
+                    <br> <br><br> 
+                    <a id="email" class="botoes" href="">
+                        <i class="fa fa-envelope">&nbsp;&nbsp;eli@ultratelecom.com.br</i>
+                    </a>   
+                </div>
+                <div id="area">
+                    <form id="formulario" name="enviar"  method="" enctype="" action="">
+                        <fieldset>
+                            <legend>Formulário</legend>
+                            <label>Nome:*</label> 
+                            <input id="nome" placeholder="Digite seu nome" type="text" name="nome" required="required"><br>
+                        
+                            <label>Telefone*:</label> 
+                            <input id="tele"placeholder="Digite seu telefone" type="tel" name="tel"required="required"><br>
+                        
+                            <label>Email*:</label> 
+                            <input  id="mail" placeholder="Digite seu e-mail" type="email" name="email"required="required"><br>
+                            <br>
+                            <label>Por favor, selecione a forma como encotrou nossa empresa:</label><br>
+                        
+                            <input class="campo_r1" type="checkbox" name="check1" value="rs"><label>Redes Sociais</label><br>
+                        
+                            <input class="campo_r1" type="checkbox" name="check1"  value="google"><label>Google</label><br>
+                       
+                            <input class="campo_r1"  type="checkbox" name="check1" value="indicacao"><label>Indicação</label><br>
+                        
+                            <input class="campo_r1" type="checkbox" name="check1" value="propaganda"><label>Propaganda</label><br>
+                            <br>
+                            <label> Selecione o motivo do contato:* </label><br>
+                            <input input  class="campo_r1" type="radio" name="radio1" value="orcamento" required="required"><label>Orçamento</label><br>
+                            <input input class="campo_r1" type="radio" name="radio1" value="sugestao" required="required"><label>Sugestão</label><br>
+                            <input input class="campo_r1" type="radio" name="radio1" value="duvida" required="required"><label>Dúvidas</label><br>
+                            <input input class="campo_r1" type="radio" name="radio1" value="reclamacao" required="required"><label>Reclamação</label><br>
+                            <br>
+                            <label> Por favor, descreva o motivo do contato:* </label><br>
+                            <textarea name="" id="" cols="100" rows="10"></textarea>
+                            <br>
+                            <input class="botao" type="submit" value="Enviar">
+                            <input class="botao" type="reset" value="Limpar">
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div class="maps">
+                    <p class="textInt" id="centro">Estamos no endereço Rua Vinte e Nove de Outubro, 335 – Uberlândia/MG – CEP 38.411-068</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.935138692753!2d-48.287783786064814!3d-18.934264887169306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e4f4f9343b%3A0xbbf2e2ee6256a9cc!2sR.%20Vinte%20e%20Nove%20de%20Outubro%2C%20335%20-%20Patrim%C3%B4nio%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038411-068!5e0!3m2!1spt-BR!2sbr!4v1668997606015!5m2!1spt-BR!2sbr" 
+                        width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="rodape">
+            <div class="rodapeBotao">
+                <a href="contato.html">FAÇA SEU ORÇAMENTO</a>
+            </div>
+            <div class="rodapeBloco">
+                <div class="rodapeBloco1">
+                    <h1>Sobre nós</h1>
+                    <p>A Ultra Telecom é uma empresa especializada no segmento de telecomunicações reconhecida no 
+                        mercado em que atua há mais de 20 anos, pela sua seriedade e competência em oferecer soluções inovadoras a seus clientes.
+                        Somos especialistas em:
+                        ✔ Manutenção em Equipamentos e Sistema de Telecomunicações
+                        ​✔ Instalação de Sistemas de Telecomunicação
+                        ✔ Infra estrutura interna
+                        ✔ Cabeamento Estruturado
+                        ✔ Fibra Ótica </p>
+                </div>
+                <div class="rodapeBloco2">
+                    <h1>Navegação</h1>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sobre.html">SOBRE NÓS</a></li>
+                        <li><a href="serviços.html">SERVIÇOS</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </section>
+        </body>
+        </html>

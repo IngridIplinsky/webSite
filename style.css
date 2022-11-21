@@ -1,0 +1,250 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+@media (max-width:600px){
+    body{
+        width: 100%;
+    } 
+    html{
+        font-size: 10px;
+    }      
+}
+
+#topoPrincipal{
+    background-image: url("/imagens/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 700px;
+    
+}
+
+.menu{
+    position: absolute;
+    width: 100%;   
+    top: 0%;  
+    float: left;
+    text-align: right;
+}
+
+.infoEmpresa li{ 
+    margin-top: 0%;
+    display: inline;
+    margin-right: 2%;
+    
+}
+.infoEmpresa a{
+    color: rgb(184, 224, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.itensMenu{
+    margin-top: 3%;
+}
+.itensMenu li{
+    margin-right: 2%;
+    display: inline;
+}
+.itens{
+    color: rgb(4, 163, 190);
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#logo{
+    width: 25%;
+    text-align: left;
+    float: left;
+    margin-left: 6%;   
+}
+.textoMenu{
+    padding-top: 15%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.textoMenu h1{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-family: 'Bitter', serif;
+    
+}
+
+.textoMenu h2{
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+}
+
+.sessaoMenu{
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+}
+.tabelaMissao{
+    padding: 10% 5%;
+    text-align: center;
+    
+}
+.cabecalhoMissao td{
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: rgb(0, 149, 175);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.itensMissao td{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 3%;
+    padding-left: 4%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.textoMenuSobre{
+    text-align: left;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+
+.sobreNosMenu{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 202, 202);
+}
+.sobreNos{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 7%;
+}
+
+.sobreNosText{
+    display: inline-block;
+    width: 45%;
+    padding-top: auto;
+    padding-left: 4%;
+   
+}
+
+.sobreNosImg{
+    display: inline-block;
+    width: 50%;
+    padding-top: 7%;
+}
+.sobreNosImg img{
+    width: 90%;
+}
+.titulosInt{   
+    color: rgb(0, 149, 175);
+    font-size: 3rem;
+    font-weight: 200;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    
+}
+
+.textInt{
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    list-style: none;
+}
+
+
+.botoes{
+    padding: 2% 4%;
+    border: none;
+    background-color: rgb(2, 102, 119);
+    font-family: 'Fragment Mono', monospace;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menuServico{
+    padding-top: 1%;
+    padding-bottom: 7%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+.tabelaMenuServ{
+    width: 95%;
+}
+
+#img1{
+    width: 60%;
+}
+#img2{
+    width: 80%;
+}
+#img3{
+    width: 110%;
+}
+#img10{
+    width: 50%;
+}
+
+.rodapeBotao{
+    background-color: rgb(31, 36, 43);
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.rodapeBotao a{
+    text-decoration: none;
+    padding: 1% 2%;
+    border: none;
+    background-color: rgb(2, 102, 119);
+    font-family: 'Fragment Mono', monospace;
+    font-size: 0.8rem;
+    color: white;
+}
+
+
+.rodapeBloco{
+    background-color: rgb(12, 14, 20);
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Bitter', serif;
+}
+
+.rodapeBloco1{
+    display: inline-block;
+    width: 40%;
+    padding-left: 4%;
+    text-align: justify;
+}
+.rodapeBloco1 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rodapeBloco2{
+    display: inline-block;
+    width: auto;
+    padding-left: 10%;
+    list-style: none;
+}
+.rodapeBloco2 li{
+    margin-top: 6%;
+    list-style: none;
+}
+.rodapeBloco2 a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
