@@ -9,8 +9,11 @@
         <meta name="author" content="Ingrid Iplinsky de Oliveira"> 
         <meta name="generation" content="Visual Studio Code">
         <title>Ultra Telecom</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="styleSobre.css">
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/titulos.css">
+        <link rel="stylesheet" type="text/css" href="./styles/rodape.css">
+        <link rel="stylesheet" type="text/css" href="./styles/menu.css">
+        <link rel="stylesheet" type="text/css" href="./styles/produto.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
     </head>
@@ -39,15 +42,16 @@
                    </ul>   
                </div>
                <div class="tituloTopo">
-                   <h1> Produtos </h1>                                     
+                   <h1> Produtos </h1> 
+                                                    
                 </div>
             </div>             
        </section>
 
-        <section class="sessao" id="fundoProd">
-            <div>
+        <section class="sessao">
+            
+            <div id="divMeio">
                 <h1 class="titulosInt TituloPro">Comunicação</h1>
-                    
                 <div class="tabelaProdutos">
                     <table class="tabelaPro">
                             <tr>
@@ -55,76 +59,63 @@
                                 <td> <img src="./imagens/videoConferencia.png" ></td>
                             </tr>
                             <tr>
-                                <td>PABXs</td>
-                                <td>Equipamentos para Vídeo Conferência</td>
+                                <td><h3>PABXs</h3></td>
+                                <td><h3>Equipamentos para Vídeo Conferência</h3></td>
                             </tr>
                             <tr>
                                 <td> <img src="./imagens/telefones.png" ></td>
                                 <td> <img src="./imagens/headsets.png" ></td>
                             </tr>
                             <tr>
-                                <td>Aparelhos de Telefone</td>
-                                <td>Headsets</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td> <img src="./imagens/interfone.png" ></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Porteiros e Interfones</td>
+                                <td><h3> Aparelhos de Telefone </h3></td>
+                                <td><h3>Headsets </h3></td>
                             </tr>
                     </table>
-                </div>
-
-                
-                <h1 class="titulosInt TituloPro">Segurança</h1>
-                    
-                <div class="tabelaProdutos">
-                    <table class="tabelaPro">
-                            <tr>
-                                <td> <img src="./imagens/camera.png" > </td>
-                                <td> <img src="./imagens/porteiro.png" ></td>                                
-                            </tr>
-                            <tr>
-                                <td>Camêras</td>
-                                <td>Centrais de Alarmes</td>
-                                
-                            </tr>
-                            <tr>
-                                <td> <img src="./imagens/fechadura.png" ></td>
-                            </tr>
-                            <tr>
-                                <td>Fechaduras Digitais</td>
-                            </tr>
-                    </table>
-                </div>
-
-                <h1 class="titulosInt TituloPro">Rede</h1>
-                    
-                <div class="tabelaProdutos">
-                    <table class="tabelaPro">
-                            <tr>
-                                <td> <img src="./imagens/fibra.png" > </td>
-                                <td> <img src="./imagens/roteadores.png" ></td>
-                            </tr>
-                            <tr>
-                                <td>Equipamentos paara fibra optica</td>
-                                <td>Switches, Roteadores, Repedidores, Access Point</td>
-                            </tr>
-                            <tr>
-                                <td> <img src="./imagens/nobreak.png" ></td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Nobreaks</td>
-                                
-                            </tr>
-                    </table>
+                    <img src="./imagens/interfone.png" >
+                    <h3>Porteiros e Interfones</h3>
                 </div>
             </div>
+            <br>
+                <div id="divMeio"> 
+                    <h1 class="titulosInt TituloPro">Segurança</h1>                        
+                    <div class="tabelaProdutos">
+                        <table class="tabelaPro">
+                                <tr>
+                                    <td> <img src="./imagens/camera.png" > </td>
+                                    <td> <img src="./imagens/porteiro.png" ></td>                                
+                                </tr>
+                                <tr>
+                                    <td><h3>Camêras</h3></td>
+                                    <td><h3>Centrais de Alarmes</h3></td>                                
+                                </tr>
+                        </table>
+                        <img src="./imagens/fechadura.png" >
+                        <h3>Fechaduras Digitais</h3>
+                    </div>
+                </div>
+                <br>
 
+                <div id="divMeio">
+                    <h1 class="titulosInt TituloPro">Rede</h1>  
+                    <div class="tabelaProdutos">
+                        <table class="tabelaPro">
+                                <tr>
+                                    <td> <img src="./imagens/fibra.png" > </td>
+                                    <td> <img src="./imagens/nobreak.png" ></td>
+                                </tr>
+                                <tr>
+                                    <td><h3>Equipamentos paara fibra optica</h3></td>
+                                    <td><h3>Nobreaks</h3></td>
+                                </tr>
+                        </table>
+                        <img src="./imagens/roteadores.png" >
+                        <h3>Switches, Roteadores, Repedidores, Access Point</h3>
+                    </div>
+                </div>
+    
         </section>
+
+        
 
         <footer class="rodape">
             <div class="rodapeBotao">
@@ -151,7 +142,7 @@
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="sobre.html">SOBRE NÓS</a></li>
-                        <li><a href="serviços.html">SERVIÇOS</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
                         <li><a href="produtos.html">PRODUTOS</a></li>
                         <li><a href="contato.html">CONTATO</a></li>
                     </ul>   
