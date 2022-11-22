@@ -9,7 +9,10 @@
         <meta name="author" content="Ingrid Iplinsky de Oliveira"> 
         <meta name="generation" content="Visual Studio Code">
         <title>Ultra Telecom</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/titulos.css">
+        <link rel="stylesheet" type="text/css" href="./styles/rodape.css">
+        <link rel="stylesheet" type="text/css" href="./styles/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
     </head>
@@ -19,7 +22,7 @@
              <div class="menu">
                 <div class="infoEmpresa">
                     <span>
-                        <img src="imagens/logomarcaUltra - Copia.png" id="logo">
+                        <img src="./imagens/logomarcaUltra - Copia.png" id="logo">
                         <ul>
                             <li><a href="https://wa.me/qr/5MAZVPKGO34HH1" target="_blank"> <i class="fa fa-phone">
                                     </i>&nbsp;&nbsp; <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+55 34 3236-8411</a> </li>
@@ -50,14 +53,14 @@
         </section>
         <section class="sessaoMenu">
             <table class="tabelaMissao">
-                <thead class="cabecalhoMissao">
+                <thead class="subTitulosInt">
                     <tr>
                         <td> <i class="fa fa-home" aria-hidden="true"></i> Missão</td>
                         <td> <i class="fa fa-binoculars" aria-hidden="true"></i> Visão</td>
                         <td> <i class="fa fa-wrench" aria-hidden="true"></i> Políticas da Empresa</td>
                     </tr>
                 </thead>
-                <tbody class="itensMissao">
+                <tbody class="textInt">
                     <tr>
                         <td>Fornecer aos nossos clientes atendimento personalizado focado na excelência e pontualidade dos serviços prestados.</td>
                         <td>Ser referência na prestação de serviços em nossa área de atuação.</td>
@@ -71,8 +74,8 @@
                     <h1 class="titulosInt">Sobre nós</h1>
                     <p class="textInt">A Ultra Telecom é uma empresa especializada no segmento de telecomunicações, infraestrutura de rede e segurança eletrônica
                          reconhecida no mercado em que atua há mais de 20 anos, devido sua seriedade e competência 
-                         em oferecer soluções inovadoras a seus clientes.</p>
-                       <p class="textInt"> Somos especialistas em: </p>
+                         em oferecer soluções inovadoras a seus clientes.
+                       <br> Somos especialistas em: </p>
                             <ul class="textInt">
                                 <li>​✔ Instalação de Sistemas de Telecomunicação e Segurança Eletrônica</li>
                                 <li>✔ Manutenção em Sistemas de Telecomunicação e Segurança Eletrônica</li>
@@ -85,7 +88,7 @@
                         <a href="sobre.html" class="botoes">VEJA MAIS NOSSO TRABALHO</a>
                 </div>
                 <div class="sobreNosImg">
-                    <img src=" ./imagens/img1.jpg">
+                    <img src="./imagens/img1.jpg">
                 </div>
             </div>
             </section>
@@ -93,23 +96,20 @@
         
         <section class="menuServico">
             <h1 class="titulosInt">Serviços</h1>
-            <table class="tabelaMenuServ">
-                <thead class="cabecalhoMissao">
-                    <tr>
-                        <td> Comunicação </td>
-                        <td> Segurança</td>
-                        <td> Redes </td>
-                        
-                    </tr>
-                </thead>
-                <tbody >
-                    <tr>
-                        <td><img class="imgTabela" id ="img1" src="./imagens/img6.jpg" alt=""></a></td>
-                        <td><img class="imgTabela" id ="img2" src="./imagens/img9.jpg" alt=""></a></td>
-                        <td><img class="imgTabela" id ="img3" src="./imagens/img12.jpg" alt=""></a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tabelaMenuServ">
+                <div>
+                    <h1 class="subTitulosInt"> Comunicação </h1>
+                    <img id ="img1" src="./imagens/img6.jpg">
+                </div>
+                <div>
+                    <h1 class="subTitulosInt"> Segurança </h1>
+                    <img id ="img2" src="./imagens/img9.jpg">
+                </div>
+                <div>
+                    <h1 class="subTitulosInt"> Redes </h1>
+                    <img id ="img3" src="./imagens/img12.jpg">
+                </div>
+            </div>
             <div class="rodapeBotao" style="background-color:  rgb(236, 236, 236);">
                 <a href="servicos.html">CONHEÇA MAIS OS NOSSOS SERVIÇOS</a>
             </div>
@@ -125,7 +125,7 @@
                     <p>A Ultra Telecom é uma empresa especializada no segmento de telecomunicações, infraestrutura de rede e segurança eletrônica
                         reconhecida no mercado em que atua há mais de 20 anos, devido sua seriedade e competência 
                         em oferecer soluções inovadoras a seus clientes.
-                      Somos especialistas em: 
+                        Somos especialistas em: 
                            <ul>
                                <li>​Instalação de Sistemas de Telecomunicação e Segurança Eletrônica</li>
                                <li>Manutenção em Sistemas de Telecomunicação e Segurança Eletrônica</li>
@@ -140,7 +140,7 @@
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="sobre.html">SOBRE NÓS</a></li>
-                        <li><a href="serviços.html">SERVIÇOS</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
                         <li><a href="produtos.html">PRODUTOS</a></li>
                         <li><a href="contato.html">CONTATO</a></li>
                     </ul>   
