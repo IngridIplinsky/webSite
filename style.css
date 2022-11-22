@@ -1,0 +1,107 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+@media (max-width:600px){
+    body{
+        width: 100%;
+    } 
+    html{
+        font-size: 10px;
+    }      
+}
+
+.sessaoMenu{
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+}
+.tabelaMissao{
+    padding: 5% 5%;
+    
+}
+.tabelaMissao td{
+    padding: 1% 2%;
+}
+
+.textoMenuSobre{
+    text-align: left;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.sobreNosMenu{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 202, 202);
+    
+}
+.sobreNos{
+    padding-top: 2%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.sobreNosText{
+    display: inline-block;
+    width: 45%;
+    padding-left: 4%;
+}
+
+.sobreNosImg{
+    display: inline-block;
+    width: 45%;
+    margin-left: 4%;
+}
+.sobreNosImg img{
+    width: 90%;
+}
+
+
+.menuServico{
+    padding-top: 1%;
+    padding-bottom: 15%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+.menuServico h1{
+    text-align: center;
+}
+
+.tabelaMenuServ{
+    width: 90%;
+    display: inline-table;
+    margin: 0;
+    
+}
+.tabelaMenuServ div{
+    text-align: center;
+    display: table-cell;
+}
+
+
+#img1{
+    width: 65%;
+    background-color: aqua;
+
+}
+#img2{
+    width: 80%;
+}
+#img3{
+    width: 115%;
+}
+#img10{
+    width: 50%;
+}
+
+

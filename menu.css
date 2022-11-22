@@ -1,0 +1,80 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+@media (max-width:600px){
+    body{
+        width: 100%;
+    } 
+    html{
+        font-size: 10px;
+    }      
+}
+
+.menu{
+    position: absolute;
+    width: 100%;   
+    top: 0%;  
+    float: left;
+    text-align: right;
+}
+
+.infoEmpresa li{ 
+    margin-top: 0%;
+    display: inline;
+    margin-right: 2%;
+    
+}
+.infoEmpresa a{
+    color: rgb(184, 224, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.itensMenu{
+    margin-top: 3%;
+}
+.itensMenu li{
+    margin-right: 2%;
+    display: inline;
+}
+.itens{
+    color: rgb(4, 163, 190);
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#logo{
+    width: 25%;
+    text-align: left;
+    float: left;
+    margin-left: 6%;   
+}
+
+
+.textoMenu{
+    padding-top: 15%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.textoMenu h1{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-family: 'Bitter', serif;
+    
+}
+
+.textoMenu h2{
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+    color: rgb(4, 163, 190);
+}
