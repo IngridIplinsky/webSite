@@ -15,8 +15,6 @@ body{
     }      
 }
 
-
-
 .TituloPro{
     margin: auto;
     padding: 1%;
@@ -43,9 +41,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     color: rgb(0, 149, 175);
-    width: 100%;
-    
-    
+    width: 100%;  
 }
 .tabelaPro{
     width: 90%;
@@ -55,9 +51,8 @@ body{
 .tabelaPro img{
     width: 70%;
 }
-
-.tabelaPro2 img{
-    width: 60%;
+.imgp{
+    width: 45%;
 }
 .sessaoContato{
     padding: 2% 4%;
