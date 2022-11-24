@@ -14,6 +14,16 @@ body{
         font-size: 10px;
     } 
     
+    #topoPrincipal{
+        padding-top: 400px;
+    }
+    #topo{
+        padding-top: 185px;
+    }
+    .subMenuProdutos h2{
+        font-size: 1rem;
+    }
+    
 }
 
 .menu{
