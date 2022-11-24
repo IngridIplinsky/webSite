@@ -1,5 +1,5 @@
 #topoPrincipal{
-    background-image: url("/imagens/back2.jpg");
+    background-image: url("./imagens/back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
 }
 
 #topo{
-    background-image: url("/imagens/back2.jpg");
+    background-image: url("./imagens/back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
