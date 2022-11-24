@@ -1,20 +1,3 @@
-html{
-    font-size: 16px;
-}
-
-body{
-    margin: 0;
-    width: 100%;
-}
-@media (max-width:600px){
-    body{
-        width: 100%;
-    } 
-    html{
-        font-size: 10px;
-    }      
-}
-
 .TituloPro{
     margin: auto;
     padding: 1%;
@@ -27,21 +10,51 @@ body{
     background-color: rgb(1, 19, 26);
 }
 
-#divMeio{
-    width: 80%;
+.divMeio{
+    width: 63%;
     border-style: outset;
     border-radius: 2%;
     margin: auto;
     padding-top: 2%;
     padding-bottom: 10%;
     background-color: rgb(233, 234, 235);
+    align-items: center;
 
 }
+.subMenuProdutos{
+    position: fixed;
+    text-align: left;    
+    width: 15%;
+    font-size: 1.2rem;
+    padding-left: 2%;
+    color: rgb(0, 149, 175);
+}
+
+.subMenuProdutos a{
+    color: rgb(0, 149, 175);
+    text-decoration: none;
+    
+}
+.subMenuProdutos a:hover{
+     color: blue;
+     cursor: pointer;
+     font-size: 1.5rem;
+}
+
+.subMenuProdutos h2{
+    border-bottom-style: groove;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+}
+
 .tabelaProdutos{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     color: rgb(0, 149, 175);
-    width: 100%;  
+    width: 100%;
+    
+    
 }
 .tabelaPro{
     width: 90%;
@@ -54,6 +67,7 @@ body{
 .imgp{
     width: 45%;
 }
+
 .sessaoContato{
     padding: 2% 4%;
 }
