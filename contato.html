@@ -8,16 +8,61 @@
         <meta name="keywords" content="Ultra Telecom, Telecom, telecomunicação, infra-estrutura">
         <meta name="author" content="Ingrid Iplinsky de Oliveira"> 
         <meta name="generation" content="Visual Studio Code">
-        <title>Ultra Telecom</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="titulos.css">
-        <link rel="stylesheet" type="text/css" href="rodape.css">
-        <link rel="stylesheet" type="text/css" href="menu.css">
-        <link rel="stylesheet" type="text/css" href="formulario.css">
+        <title>Contato</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/titulos.css">
+        <link rel="stylesheet" type="text/css" href="./styles/rodape.css">
+        <link rel="stylesheet" type="text/css" href="./styles/menu.css">
+        <link rel="stylesheet" type="text/css" href="./styles/formulario.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Titillium+Web:wght@400&display=swap" rel="stylesheet">   
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </head>
     <body>
+        
+        <header id="menuEscondido">
+            <nav>
+                <div class="menuImagem">
+                    <img src="./imagens/logomarcaUltra - Copia.png">
+                </div>
+
+                <div class="menuLinks">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>  
+
+                <div class="mobileB">
+                    <button onclick="openMenu()">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </button>
+                    
+                </div> 
+            </nav>
+
+            <div class="mobile" id="menuM">
+                <a id="mobileX" href="javascript:void(0)" onclick="closeMenu()">&times;</a>
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                       <li><a href="sobre.html">SOBRE</a></li>
+                       <li><a href="servicos.html">SERVIÇOS</a></li>
+                       <li><a href="produtos.html">PRODUTOS</a></li>
+                       <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>    
+            </div> 
+            
+        </header>
+
+        
         <section id="topo">
             <div class="menu">
                <div class="infoEmpresa">
@@ -34,11 +79,11 @@
                </div>
                <div class="itensMenu">
                    <ul>
-                       <li><a class="itens" href="index.html">HOME</a></li>
-                       <li><a class="itens" href="sobre.html">SOBRE NÓS</a></li>
-                       <li><a class="itens" href="servicos.html">SERVIÇOS</a></li>
-                       <li><a class="itens" href="produtos.html">PRODUTOS</a></li>
-                       <li><a class="itens" href="contato.html">CONTATO</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                    </ul>   
                </div>
                <div class="tituloTopo">
@@ -48,8 +93,33 @@
        </section>
 
         <section>
-            <div class="sessaoForm">
-                
+            
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <label>Nome:</label> <label id="cNome"></label><br>
+                        <label>Telefone:</label> <label id="cTel"></label><br>
+                        <label>Email:</label> <label id="cEmail"></label><br>
+                        <label>Como conheceu nossa empresa:</label> <label id="cCurso"></label><br>
+                        <label>Motivo do Contato:</label> <label id="cMot"></label><br>
+                        <label>Descrição do Contato:</label> <label id="cDesc"></label><br>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <a href="obrigada.html"  class="btn btn-primary" >Salvar mudanças</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div id="sessaoForm">
                 <h2 class="maps">Entre em contato pelo formulário abaixo ou ligue <i class="fa fa-phone"></i> &nbsp;&nbsp;34 3236-8411 </h2>
                 <br>
                 <div class="sobreNosText">
@@ -60,39 +130,50 @@
                         <i class="fa fa-envelope">&nbsp;&nbsp;eli@ultratelecom.com.br</i>
                     </a>   
                 </div>
+
                 <div id="area">
                     <form id="formulario" name="enviar"  method="" enctype="" action="">
                         <fieldset>
                             <legend>Formulário</legend>
-                            <label>Nome:*</label> 
-                            <input id="nome" placeholder="Digite seu nome" type="text" name="nome" required="required"><br>
-                        
-                            <label>Telefone*:</label> 
-                            <input id="tele"placeholder="Digite seu telefone" type="tel" name="tel"required="required"><br>
-                        
-                            <label>Email*:</label> 
-                            <input  id="mail" placeholder="Digite seu e-mail" type="email" name="email"required="required"><br>
-                            <br>
+                            <div class="inpu">
+                                <input id="nome" type="text" name="nome" required="required">
+                                <label class="labe">Nome:*</label>
+                                <br>
+                                <span id="spanNome"></span><br>
+                            </div>
+                            <div class="inpu"> 
+                                <input id="tele" type="tel" name="tel"required="required">
+                                <label class="labe">Telefone*:</label><br>
+                                <span id="spanTel"></span><br>
+                            </div>
+                            <div class="inpu">
+                                <input id="mail" type="email" name="email"required="required">
+                                <label class="labe">Email*:</label> <br>
+                                <br>
+                            </div>
+
                             <label>Por favor, selecione a forma como encotrou nossa empresa:</label><br>
                         
-                            <input class="campo_r1" type="checkbox" name="check1" value="rs"><label>Redes Sociais</label><br>
+                            <input type="checkbox" name="check1" id="check1" value="Redes Sociais"><label>Redes Sociais</label><br>
                         
-                            <input class="campo_r1" type="checkbox" name="check1"  value="google"><label>Google</label><br>
+                            <input type="checkbox" name="check1" id="check2" value="Google"><label>Google</label><br>
                        
-                            <input class="campo_r1"  type="checkbox" name="check1" value="indicacao"><label>Indicação</label><br>
+                            <input type="checkbox" name="check1" id="check3" value="Indicaoção"><label>Indicação</label><br>
                         
-                            <input class="campo_r1" type="checkbox" name="check1" value="propaganda"><label>Propaganda</label><br>
-                            <br>
+                            <input type="checkbox" name="check1" id="check4" value="Propaganda"><label>Propaganda</label><br>
+                            <span id="spanEncontrado"></span><br>
+
                             <label> Selecione o motivo do contato:* </label><br>
-                            <input input  class="campo_r1" type="radio" name="radio1" value="orcamento" required="required"><label>Orçamento</label><br>
-                            <input input class="campo_r1" type="radio" name="radio1" value="sugestao" required="required"><label>Sugestão</label><br>
-                            <input input class="campo_r1" type="radio" name="radio1" value="duvida" required="required"><label>Dúvidas</label><br>
-                            <input input class="campo_r1" type="radio" name="radio1" value="reclamacao" required="required"><label>Reclamação</label><br>
+                            <input type="radio" name="radio1" id="radio1" value="Orçamento" required="required"><label>Orçamento</label><br>
+                            <input type="radio" name="radio1" id="radio2" value="Sugestão" required="required"><label>Sugestão</label><br>
+                            <input type="radio" name="radio1" id="radio3" value="Dúvida" required="required"><label>Dúvidas</label><br>
+                            <input type="radio" name="radio1" id="radio4" value="Reclamação" required="required"><label>Reclamação</label><br>
                             <br>
+
                             <label> Por favor, descreva o motivo do contato:* </label><br>
-                            <textarea name="" id="" cols="100" rows="10"></textarea>
+                            <textarea name="" id="textArea" cols="100" rows="5"></textarea>
                             <br>
-                            <input class="botao" type="submit" value="Enviar">
+                            <button class="botao" type="submit" id="botao">Enviar</button>
                             <input class="botao" type="reset" value="Limpar">
                         </fieldset>
                     </form>
@@ -104,34 +185,37 @@
                         width="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
+            
+            
+            
+            <script src="/scripts/main.js"></script>
         </section>
-
+       
         <footer class="rodape">
             <div class="rodapeBotao">
                 <a href="contato.html">FAÇA SEU ORÇAMENTO</a>
             </div>
             <div class="rodapeBloco">
                 <div class="rodapeBloco1">
-                    <h1>Sobre Nós</h1>
+                    <h2>Sobre Nós</h2>
                     <p>A Ultra Telecom é uma empresa especializada no segmento de telecomunicações, infraestrutura de rede e segurança eletrônica
                         reconhecida no mercado em que atua há mais de 20 anos, devido sua seriedade e competência 
                         em oferecer soluções inovadoras a seus clientes.
                         <p>Somos especialistas em:</p>  
                            <ul>
-                               <li>​Instalação de Sistemas de Telecomunicação e Segurança Eletrônica</li>
-                               <li>Manutenção em Sistemas de Telecomunicação e Segurança Eletrônica</li>
-                               <li>Infra estrutura interna</li>
-                               <li>Cabeamento Estruturado</li>
-                               <li>Fibra Ótica </li>
+                               <li>​✔ ​Instalação de Sistemas de Telecomunicação e Segurança Eletrônica</li>
+                               <li>​✔ Manutenção em Sistemas de Telecomunicação e Segurança Eletrônica</li>
+                               <li>​✔ Infra estrutura interna</li>
+                               <li>​✔ Cabeamento Estruturado</li>
+                               <li>​✔ Fibra Ótica </li>
                            </ul></p>
                 </div>
                 <div class="rodapeBloco2">
-                    <h1>Navegação</h1>
+                    <h2>Navegação</h2>
                     <br>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="sobre.html">SOBRE NÓS</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
                         <li><a href="servicos.html">SERVIÇOS</a></li>
                         <li><a href="produtos.html">PRODUTOS</a></li>
                         <li><a href="contato.html">CONTATO</a></li>
@@ -139,5 +223,8 @@
                 </div>
             </div>
         </footer>
+    </div>
+        <script src="./scripts/menu.js"></script>
+        <script src="./scripts/formulario.js"></script>
     </body>
 </html>
