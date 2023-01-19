@@ -6,39 +6,42 @@ body{
     margin: 0;
     width: 100%;
 }
-@media (max-width:600px){
-    body{
-        width: 100%;
-    } 
-    html{
-        font-size: 10px;
-    } 
-    
-    #topoPrincipal{
-        padding-top: 650px;
-    }
-    #topo{
-        padding-top: 185px;
-    }
-    .subMenuProdutos h2{
-        font-size: 1rem;
-    }
-    
+
+#topoPrincipal{
+    background-image: url("/imagens/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 700px;
+    display: flex;
+}
+
+#topo{
+    background-image: url("/imagens/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 260px;
+    display: flex;
+    margin-top: 0%;
 }
 
 .menu{
-    position: absolute;
     width: 100%;   
     top: 0%;  
     float: left;
     text-align: right;
+    display: flexbox;
+    position: absolute;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .infoEmpresa li{ 
-    margin-top: 0%;
-    display: inline;
-    margin-right: 2%;
     
+    display: inline;
+    margin-right: 1%;   
 }
 .infoEmpresa a{
     color: rgb(184, 224, 250);
@@ -47,20 +50,27 @@ body{
     font-size: 1rem;
 }
 
+.infoEmpresa ul{ 
+    margin-left: 40%;
+    top: 0;
+    padding-top: 0;
+}
+
+.itensMenu a:hover, .itensMenu a:focus, .itensMenu a:link{
+    color: rgb(184, 224, 250);
+}
+
 .itensMenu{
     margin-top: 3%;
+    top: 0;
+    margin-left: 40%;
 }
-
-.itensMenu a:hover{
-    color: rgb(68, 203, 236);
-}
-
 
 .itensMenu li{
-    margin-right: 2%;
+    margin-right: 3%;
     display: inline;
 }
-.itens{
+.itensMenu a{
     color: rgb(4, 163, 190);
     font-size: 2rem;
     text-decoration: none;
@@ -70,12 +80,14 @@ body{
     width: 25%;
     text-align: left;
     float: left;
-    margin-left: 6%;   
+    margin-left: 6%; 
+    top: 0;
+    padding-top: 0;  
 }
 
 
 .textoMenu{
-    padding-top: 15%;
+    padding-top: 10%;
     text-align: left;
     margin-left: 5%;
     margin-right: 2%;
@@ -94,4 +106,139 @@ body{
     font-size: 1.5rem;
     font-family: 'Bitter', serif;
     color: rgb(4, 163, 190);
+}
+
+#menuEscondido{
+    background-color: rgb(5, 5, 133);
+    box-shadow: 5px 5px 5px rgb(4, 163, 190);
+
+    width: 100%;
+    position: fixed;
+}
+
+nav, .menuImagem, .menuLinks, .menuLinks ul, .mobileB{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menuImagem img{
+    width: 30%;
+    padding-left: 5%;
+}
+.menuLinks{
+    width: 90%;
+}
+.menuLinks li{
+    padding-right:5%
+}
+
+.menuLinks a, .mobile a{
+    text-decoration : none;
+    color: rgb(4, 163, 190);
+    font-size: 1.8rem;
+    font-family: 'Bitter', serif;
+}
+
+.mobile a:focus, .mobile a:hover{
+    color: rgb(184, 224, 250);
+}
+
+.mobileB button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile{
+    position: fixed absolute;
+    width: 100%;
+    height: 00%;
+    background-color: rgb(44, 44, 44);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    display: block;
+    padding-left: 10%;
+
+}
+
+.mobile ul{
+    text-align: center;
+    list-style: none;
+    text-overflow: clip;
+    transition: 0.3s;
+    width: 30%;
+
+}
+
+.mobile li{  
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px gray;
+}
+
+#mobileX{
+    font-size: 4rem;
+}
+
+.mobileB{
+    display: none;
+}
+
+.mobile, #menuEscondido{
+    display: none;
+}
+
+
+
+
+
+@media (max-width:750px){
+    body{
+        width: 100%;
+    } 
+    html{
+        font-size: 10px;
+    } 
+    #topoPrincipal{
+        padding-top: 400px;
+    }
+    #topo{
+        padding-top: 185px;
+    }
+    .subMenuProdutos h2{
+        font-size: 1rem;
+    }
+
+    .mobileB{
+        display: flex;
+    }
+
+    #menuEscondido{
+        position: fixed;
+        display: flex;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .menuLinks{
+        display: none;
+    }
+
+    .itensMenu{
+        display: none;
+    }
+    .infoEmpresa{
+        display: none;
+    }
+    .tituloTopo{
+        margin-top: 17%;
+    }
+
 }
