@@ -1,0 +1,60 @@
+.carousel-inner{ 
+    height: 25em;
+    background-color: rgb(10, 1, 51);
+}
+
+#car1{
+    background-image: url(/imagens/Cópia\ de\ 1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#car2{
+    background-image: url(/imagens/madrecor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#car3{
+    background-image: url(/imagens/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#car4{
+    background-image: url(/imagens/inst\ sl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-body{
+    text-align: center;
+}
+.row{
+    margin: 1.5em;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+}
+
+.breadcrumb{
+    width: 100%;
+}
+
+.breadcrumb li{
+    display: inline-flex;
+    padding-right: 0%;
+    margin-right: 10%;
+    text-align: center;
+}
+#nossa{
+    font-size: 3rem;
+}
+
+#btnBad{
+    float: right;
+    padding: 5px 10px;
+    font-size: 2rem;
+    margin-right: 5%;
+}
